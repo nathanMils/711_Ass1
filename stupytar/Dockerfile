@@ -2,7 +2,7 @@
 FROM jupyter/scipy-notebook:x86_64-ubuntu-22.04
 
 # Install any additional packages you want
-RUN pip install torch torchvision torchaudio
+RUN pip install imblearn torch torchaudio torchvision
 
 # You can also set environment variables here if needed
 # ENV JUPYTER_TOKEN='your_password_here'

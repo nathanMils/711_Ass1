@@ -9,6 +9,7 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{tabularx}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -24,6 +25,7 @@ u21553832@tuks.co.za}
 \maketitle
 
 \begin{abstract}
+In order to compare and contrast different training algorithms I believe it is appropriate to, you know what fuck this is stupid
 The abstract should briefly summarise the purpose and findings of the report.
 \end{abstract}
 
@@ -38,7 +40,69 @@ The introduction sets the stage for the remainder of your report. You usually ha
 A very high level discussion on the problem domain and the algorithms and/or approaches that you have used. This section is typically where the “base cases” of concepts that appear throughout the remainder of your report are discussed. It is also an ideal place to refer a reader to other sources containing relevant information on the topic which is outside the scope of your assignment. Remember to discuss very generally. After reading this section the marker should be able to determine whether or not you understand the techniques that you are using. Try to limit this section to 1 page maximum. Make sure you reference the relevant sources when discussing the building blocks of your project.
 
 \section{Experimental Set-Up}
-In this section you discuss how you approached, implemented and solved your assignment. Mention the values considered for the hyperparameters, how many simulations you have run, etc. After reading this section (in addition to the background) the reader should be able to replicate your experiments to obtain similar results to those obtained by you. Be very specific in your discussions in this section.
+In this section, I will attempt to outline the approaches and strategies utilized throughout this assignment, providing a rationale for the various choices made regarding data preparation, hyperparameters and hybrid learning.
+\subsection{Software}
+To aid in this assignment, I used a Docker container to host and run Jupyter notebooks. Specifically, I used the "jupyter/scipy-notebook\_ 64-ubuntu-22.04" Docker image. For the machine learning and neural network processes, I decided to use the PyTorch framework, known for its flexibility, efficiency and more importantly its simplicity. Additionally, I incorporated essential libraries such as Pandas and NumPy for data manipulation and preparation, along with scikit-learn (sklearn) for various preprocessing and modeling tasks. This software stack provided a comprehensive set of tool for addressing the task at hand.
+
+
+\subsection{Data Preparation}
+Data preparation is an important aspect of any learning process and is vital to enhancing the performance of any supervised learning process.\\
+\subsubsection{Dataset Description}
+The "Almond Types Classification" dataset contains a total of 2803 almonds that are described via fourteen attributes (Id and Type included).\\
+\subsubsection{Outliers}
+Outliers can have a significant impact on the performance of the model and so it now requires attention. In order to detect outliers I used the InterQuartile Range (IQR) method. With this method the rows outside the $25^{th}$ and $75^th$ percentile are removed from the dataset. Missing values are excluded from this and are not removed. This is performed for each column excluding the target attribute "Type". After removing the outliers we are left with
+\subsubsection{Missing Values}
+Now that the outliers have been removed we can focus on the main issue of this dataset regarding the attributes: Length, Width and Thickness, whereby each almond is missing exactly one of these attributes. Specifically 30.57\% are missing Length, 33.61\% are missing Width and 35.82\% are missing Thickness. This is clearly an extensive amount of missing information, to address this I decided to utilize the iterative imputer (IterativeImputer) from the scikit-learn library. This is a multivariate imputer that estimates each feature from all the others. It uses a strategy for imputing values by modeling each feature with missing values as a function of others in a round-robin like fashion.
+\newline \\
+There is still the issue concerning the attributes Roundness, Aspect Ratio and Eccentricity. These features are dependent on Length, Width, and Thickness. Therefore, including these dependent attributes in the iterative imputation process would be pointless, since their values are absent when the corresponding independent features are missing. Therefore, I have decided to exclude these dependent features from the imputation process. This leaves the following attributes: Length, Width and Thickness. The correlation matrix below demonstrates that these features are interrelated, suggesting that they will be effective for iterative imputation.
+\begin{table}[h]
+    \centering
+    \caption{Correlation Matrix}
+    \small
+    \begin{tabular}{|p{1.5cm}|p{1cm}|p{1cm}|p{1.5cm}|p{1cm}|}
+        \hline
+        \textbf{Features} & \textbf{Length} & \textbf{Width} & \textbf{Thickness} \\
+        \hline
+        Length    & 1.000 & 0.837 & 0.458\\
+        \hline
+        Width     & 0.837 & 1.000 & 0.595\\
+        \hline
+        Thickness & 0.458 & 0.595 & 1.000\\
+        \hline
+    \end{tabular}
+    \label{tab:correlation_matrix}
+\end{table}
+\newline \\
+Lastly, I noticed an issue specific to the "Roundness" attribute. Unlike the other dependent attributes this attribute is calculated from both the Length and Area. This is an issue because Area is influenced by the angle of the almond in the 2D image from which it is extracted. Therefore, relying on the imputed Length and original Area to compute Roundness may not be sufficient. To address this, I created a temporary attribute called Area\_ Length, which equals Area when Length is present and is NaN when Length is not present. This approach aims to provide a more reliable estimate for calculating Roundness.
+\newline \\
+Once the missing values have been imputed they are then used to recalculate the Roundness, Aspect Ratio and Eccentricity.\\
+
+\subsubsection{Encoding}
+Before we can utilize neural networks we need to ensure that the data is the correct format. This is especially true for the target attribute "Type". This is a nominal value, hence there is no inherit order to the category. Therefore I utilized one-hot encoding. This ensures that the data is in a numerical format and that the model cannot interpret any inherent order from the data.
+\begin{table}[h]
+\centering
+\caption{One-Hot Encoding Representation for Almond Types}
+\begin{tabular}{|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+\hline
+\textbf{Almond Type} & \textbf{MAMRA} & \textbf{REGULAR} & \textbf{SANORA} \\
+\hline
+MAMRA   & 1 & 0 & 0 \\
+REGULAR & 0 & 1 & 0 \\
+SANORA  & 0 & 0 & 1 \\
+\hline
+\end{tabular}
+\label{tab:one_hot_representation}
+\end{table}
+
+\subsection{Weight Initialization}
+
+\subsection{NN Architecture}
+
+\subsection{Objective Function}
+
+\subsection{Learning Rate, Epochs and Batch Size}
+
+\subsection{Training Algorithm}
 
 \section{Research Results}
 This is the section where you report your results obtained from running the experiments as discussed in the experimental set-up section. You have to give, at the very least, the averages and the standard deviations for all the experiments simulations. Graphing your results is advisable, and no conclusions regarding the superiority of one approach over another can be made without some form of statistical reasoning. Training and testing errors have to be reported. Thoroughly discuss the results that you have obtained, and reason about why you obtained the results that you have. Answer questions like “are these results to be expected?” and “why these results occurred?” and “would different circumstances lead to different results?”

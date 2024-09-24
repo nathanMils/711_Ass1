@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.27)  7 SEP 2024 20:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.27)  24 SEP 2024 19:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -256,46 +256,66 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+) (C:\Users\natei\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
+
+(C:\Users\natei\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen175
+\ar@mcellbox=\box55
+\extrarowheight=\dimen176
+\NC@list=\toks24
+\extratabsurround=\skip56
+\backup@length=\skip57
+\ar@cellbox=\box56
+)
+\TX@col@width=\dimen177
+\TX@old@table=\dimen178
+\TX@old@col=\dimen179
+\TX@target=\dimen180
+\TX@delta=\dimen181
+\TX@cols=\count285
+\TX@ftn=\toks25
 )
 (C:\Users\natei\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count285
-\l__pdf_internal_box=\box55
+\l__color_backend_stack_int=\count286
+\l__pdf_internal_box=\box57
 ) (Assignment_1.aux)
 \openout1 = `Assignment_1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
 -- Lines per column: 56 (exact).
 
 (C:\Users\natei\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count286
-\scratchdimen=\dimen175
-\scratchbox=\box56
-\nofMPsegments=\count287
-\nofMParguments=\count288
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count289
-\MPscratchDim=\dimen176
-\MPnumerator=\count290
-\makeMPintoPDFobject=\count291
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count287
+\scratchdimen=\dimen182
+\scratchbox=\box58
+\nofMPsegments=\count288
+\nofMParguments=\count289
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count290
+\MPscratchDim=\dimen183
+\MPnumerator=\count291
+\makeMPintoPDFobject=\count292
+\everyMPtoPDFconversion=\toks27
 )
 (C:\Users\natei\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -307,6 +327,99 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+ \OT1/ptm/m/it/10 1) Dataset De-scrip-tion: [][] \OT1/ptm/m/n/10 The "Al-mond T
+ypes
+ []
+
+
+Underfull \hbox (badness 1571) in paragraph at lines 51--52
+\OT1/ptm/m/n/10 that are de-scribed via four-teen at-tributes (Id and Type
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
+
+(C:\Users\natei\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
+
+
+(C:\Users\natei\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 1803) in paragraph at lines 55--79
+ \OT1/ptm/m/it/10 3) Miss-ing Val-ues: [][] \OT1/ptm/m/n/10 Now that the out-li
+ers have been
+ []
+
+
+Underfull \hbox (badness 2990) in paragraph at lines 55--79
+\OT1/ptm/m/n/10 re-gard-ing the at-tributes: Length, Width and Thick-ness,
+ []
+
+
+Underfull \hbox (badness 1789) in paragraph at lines 55--79
+\OT1/ptm/m/n/10 whereby each al-mond is miss-ing ex-actly one of these
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--79
+
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 55--79
+\OT1/ptm/m/n/10 on Length, Width, and Thick-ness. There-fore, in-clud-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--79
+
+ []
+
+
+Underfull \hbox (badness 1824) in paragraph at lines 55--79
+\OT1/ptm/m/n/10 Lastly, I no-ticed an is-sue spe-cific to the "Round-ness"
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--79
+
+ []
+
+
+Underfull \hbox (badness 2435) in paragraph at lines 55--79
+\OT1/ptm/m/n/10 Once the miss-ing val-ues have been im-puted they are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--79
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[1{C:/Users/natei/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/na
+tei/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+[]|\OT1/ptm/b/n/8 Almond
+ []
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -318,32 +431,31 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[1{C:/Users/natei/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/na
-tei/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
-
-
-]
-(Assignment_1.aux)
+[2] (Assignment_1.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-13>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4119 strings out of 474462
- 65133 string characters out of 5742903
- 1940998 words of memory out of 5000000
- 26419 multiletter control sequences out of 15000+600000
- 586300 words of font info for 83 fonts, out of 8000000 for 9000
+ 4317 strings out of 474462
+ 68199 string characters out of 5742903
+ 1946998 words of memory out of 5000000
+ 26583 multiletter control sequences out of 15000+600000
+ 597689 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,8n,65p,792b,259s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pf
-b><C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.p
-fb><C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.p
-fb>
-Output written on Assignment_1.pdf (1 page, 47600 bytes).
+ 57i,11n,65p,792b,259s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb><C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmmi7.pfb><C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb><C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts/
+type1/urw/times/utmb8a.pfb><C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts/
+type1/urw/times/utmbi8a.pfb><C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts
+/type1/urw/times/utmr8a.pfb><C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts
+/type1/urw/times/utmri8a.pfb>
+Output written on Assignment_1.pdf (2 pages, 98769 bytes).
 PDF statistics:
- 22 PDF objects out of 1000 (max. 8388607)
+ 45 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
