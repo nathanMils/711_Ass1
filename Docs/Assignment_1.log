@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.27)  24 SEP 2024 19:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.27)  1 OCT 2024 14:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -327,99 +327,147 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
- \OT1/ptm/m/it/10 1) Dataset De-scrip-tion: [][] \OT1/ptm/m/n/10 The "Al-mond T
-ypes
- []
-
-
-Underfull \hbox (badness 1571) in paragraph at lines 51--52
-\OT1/ptm/m/n/10 that are de-scribed via four-teen at-tributes (Id and Type
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
 
 (C:\Users\natei\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
 
 
 (C:\Users\natei\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 1803) in paragraph at lines 55--79
- \OT1/ptm/m/it/10 3) Miss-ing Val-ues: [][] \OT1/ptm/m/n/10 Now that the out-li
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
+
+ []
+
+
+Underfull \hbox (badness 1803) in paragraph at lines 58--83
+ \OT1/ptm/m/it/10 2) Miss-ing Val-ues: [][] \OT1/ptm/m/n/10 Now that the out-li
 ers have been
  []
 
 
-Underfull \hbox (badness 2990) in paragraph at lines 55--79
+Underfull \hbox (badness 2990) in paragraph at lines 58--83
 \OT1/ptm/m/n/10 re-gard-ing the at-tributes: Length, Width and Thick-ness,
  []
 
 
-Underfull \hbox (badness 1789) in paragraph at lines 55--79
+Underfull \hbox (badness 1789) in paragraph at lines 58--83
 \OT1/ptm/m/n/10 whereby each al-mond is miss-ing ex-actly one of these
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--79
+Underfull \hbox (badness 10000) in paragraph at lines 58--83
 
  []
 
 
-Underfull \hbox (badness 2376) in paragraph at lines 55--79
+Underfull \hbox (badness 2376) in paragraph at lines 58--83
 \OT1/ptm/m/n/10 on Length, Width, and Thick-ness. There-fore, in-clud-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--79
+Underfull \hbox (badness 10000) in paragraph at lines 58--83
 
  []
 
 
-Underfull \hbox (badness 1824) in paragraph at lines 55--79
+Underfull \hbox (badness 1824) in paragraph at lines 58--83
 \OT1/ptm/m/n/10 Lastly, I no-ticed an is-sue spe-cific to the "Round-ness"
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--79
+Underfull \hbox (badness 10000) in paragraph at lines 58--83
 
  []
 
 
-Underfull \hbox (badness 2435) in paragraph at lines 55--79
+Underfull \hbox (badness 2435) in paragraph at lines 58--83
 \OT1/ptm/m/n/10 Once the miss-ing val-ues have been im-puted they are
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--79
+Underfull \hbox (badness 10000) in paragraph at lines 58--83
 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 58--83
+
+ []
 
 [1{C:/Users/natei/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/na
 tei/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 87--87
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
 []|\OT1/ptm/b/n/8 Almond
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 107--110
+ \OT1/ptm/m/it/10 6) Data Scal-ing: [][] \OT1/ptm/m/n/10 To pre-vent sat-u-ra-t
+ion for ac-ti-va-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
+
+ []
+
+[2]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -431,7 +479,9 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[2] (Assignment_1.aux)
+[3
+
+] (Assignment_1.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-13>
@@ -453,9 +503,9 @@ type1/urw/times/utmb8a.pfb><C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts/
 type1/urw/times/utmbi8a.pfb><C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts
 /type1/urw/times/utmr8a.pfb><C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on Assignment_1.pdf (2 pages, 98769 bytes).
+Output written on Assignment_1.pdf (3 pages, 101490 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
+ 48 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

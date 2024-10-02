@@ -9,5 +9,3 @@ RUN pip install imblearn torch torchaudio torchvision
 
 # Expose port 8888 for Jupyter Notebook
 EXPOSE 8888
-
-# CMD is already set to launch Jupyter Notebook, so no need to modify it
