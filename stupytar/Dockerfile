@@ -1,11 +1,12 @@
-# Dockerfile
 FROM jupyter/scipy-notebook:x86_64-ubuntu-22.04
 
-# Install any additional packages you want
-RUN pip install imblearn torch torchaudio torchvision
+USER root
 
-# You can also set environment variables here if needed
-# ENV JUPYTER_TOKEN='your_password_here'
+RUN apt-get update && apt-get install -y nodejs npm && apt-get clean
 
-# Expose port 8888 for Jupyter Notebook
+USER $NB_UID
+
+RUN pip install imblearn jupyterlab 'python-lsp-server[all]' torch torchaudio torchvision \
+    && jupyter labextension install @krassowski/jupyterlab-lsp && tabulate
+
 EXPOSE 8888

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.27)  1 OCT 2024 14:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.27)  3 OCT 2024 22:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -277,45 +277,89 @@ Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 \TX@cols=\count285
 \TX@ftn=\toks25
 )
+(C:\Users\natei\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen182
+\lightrulewidth=\dimen183
+\cmidrulewidth=\dimen184
+\belowrulesep=\dimen185
+\belowbottomsep=\dimen186
+\aboverulesep=\dimen187
+\abovetopsep=\dimen188
+\cmidrulesep=\dimen189
+\cmidrulekern=\dimen190
+\defaultaddspace=\dimen191
+\@cmidla=\count286
+\@cmidlb=\count287
+\@aboverulesep=\dimen192
+\@belowrulesep=\dimen193
+\@thisruleclass=\count288
+\@lastruleclass=\count289
+\@thisrulewidth=\dimen194
+)
+(C:\Users\natei\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\natei\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\natei\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count290
+\Gm@cntv=\count291
+\c@Gm@tempcnt=\count292
+\Gm@bindingoffset=\dimen195
+\Gm@wd@mp=\dimen196
+\Gm@odd@mp=\dimen197
+\Gm@even@mp=\dimen198
+\Gm@layoutwidth=\dimen199
+\Gm@layoutheight=\dimen256
+\Gm@layouthoffset=\dimen257
+\Gm@layoutvoffset=\dimen258
+\Gm@dimlist=\toks26
+
+(C:\Users\natei\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+
 (C:\Users\natei\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count286
+\l__color_backend_stack_int=\count293
 \l__pdf_internal_box=\box57
 ) (Assignment_1.aux)
 \openout1 = `Assignment_1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 
--- Lines per column: 56 (exact).
+-- Lines per column: 46 (approximate, difference = 4.47656pt).
 
 (C:\Users\natei\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count287
-\scratchdimen=\dimen182
+\scratchcounter=\count294
+\scratchdimen=\dimen259
 \scratchbox=\box58
-\nofMPsegments=\count288
-\nofMParguments=\count289
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count290
-\MPscratchDim=\dimen183
-\MPnumerator=\count291
-\makeMPintoPDFobject=\count292
-\everyMPtoPDFconversion=\toks27
+\nofMPsegments=\count295
+\nofMParguments=\count296
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count297
+\MPscratchDim=\dimen260
+\MPnumerator=\count298
+\makeMPintoPDFobject=\count299
+\everyMPtoPDFconversion=\toks28
 )
 (C:\Users\natei\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -327,89 +371,98 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Underfull \hbox (badness 10000) in paragraph at lines 52--54
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
+* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=430.00462pt
+* \textheight=556.47656pt
+* \oddsidemargin=19.8752pt
+* \evensidemargin=19.8752pt
+* \topmargin=-7.44023pt
+* \headheight=12.0pt
+* \headsep=18.56761pt
+* \topskip=12.0pt
+* \footskip=40.5821pt
+* \marginparwidth=20.0pt
+* \marginparsep=10.0pt
+* \columnsep=12.0pt
+* \skip\footins=10.79993pt plus 4.79993pt minus 2.39996pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Underfull \hbox (badness 7649) in paragraph at lines 39--40
+[]\OT1/ptm/m/n/10 In this as-sign-ment, I will be eval-u-at-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+\OT1/ptm/m/n/10 and com-par-ing var-i-ous hy-per-pa-ram-e-ters and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--54
-
- []
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
-
-(C:\Users\natei\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
-
-
-(C:\Users\natei\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 10000) in paragraph at lines 55--57
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--57
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
 
-Underfull \hbox (badness 1803) in paragraph at lines 58--83
- \OT1/ptm/m/it/10 2) Miss-ing Val-ues: [][] \OT1/ptm/m/n/10 Now that the out-li
-ers have been
+Underfull \hbox (badness 7486) in paragraph at lines 45--46
+\OT1/ptm/m/n/10 based train-ing al-go-rithms, in-clud-ing gra-di-ent
  []
 
 
-Underfull \hbox (badness 2990) in paragraph at lines 58--83
-\OT1/ptm/m/n/10 re-gard-ing the at-tributes: Length, Width and Thick-ness,
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+\OT1/ptm/m/n/10 de-scent vari-ants and ad-vanced op-ti-miza-tion
  []
 
 
-Underfull \hbox (badness 1789) in paragraph at lines 58--83
-\OT1/ptm/m/n/10 whereby each al-mond is miss-ing ex-actly one of these
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+\OT1/ptm/m/n/10 tech-niques like Adam and RM-Sprop. Each
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--83
-
- []
-
-
-Underfull \hbox (badness 2376) in paragraph at lines 58--83
-\OT1/ptm/m/n/10 on Length, Width, and Thick-ness. There-fore, in-clud-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--83
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
 
-Underfull \hbox (badness 1824) in paragraph at lines 58--83
-\OT1/ptm/m/n/10 Lastly, I no-ticed an is-sue spe-cific to the "Round-ness"
+Underfull \hbox (badness 4013) in paragraph at lines 47--48
+\OT1/ptm/m/n/10 ma-tri-ces. By com-par-ing these met-rics across
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--83
-
- []
-
-
-Underfull \hbox (badness 2435) in paragraph at lines 58--83
-\OT1/ptm/m/n/10 Once the miss-ing val-ues have been im-puted they are
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--83
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--83
-
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
+ \OT1/ptm/m/it/10 C. Hy-per-pa-ram-e-ter Op-ti-miza-tion with K-Fold
  []
 
 [1{C:/Users/natei/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/na
@@ -417,57 +470,269 @@ tei/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 90--90
-[]|\OT1/ptm/b/n/8 Almond
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--100
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--100
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--103
+Underfull \hbox (badness 4872) in paragraph at lines 67--68
+[]\OT1/ptm/m/n/10 The "Al-mond Types Clas-si-fi-ca-tion" dataset
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 71.
+
+(C:\Users\natei\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 71.
+
+
+(C:\Users\natei\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+[]\OT1/ptm/b/n/10 Eccentricity\OT1/ptm/m/n/10 : Mea-sure de-fined as
+ []
+
+
+Underfull \hbox (badness 4144) in paragraph at lines 84--85
+[]\OT1/ptm/b/n/10 Type\OT1/ptm/m/n/10 : The al-mond type, which can be
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--103
+Underfull \hbox (badness 10000) in paragraph at lines 115--115
+[]|\OT1/ptm/m/n/8 Missing
+ []
+
+
+Overfull \hbox (3.81815pt too wide) in paragraph at lines 115--115
+[]|\OT1/ptm/m/n/8 26511.12| 
+ []
+
+
+Overfull \hbox (3.81815pt too wide) in paragraph at lines 115--115
+[]|\OT1/ptm/m/n/8 13782.56| 
+ []
+
+
+Overfull \hbox (3.81815pt too wide) in paragraph at lines 115--115
+[]|\OT1/ptm/m/n/8 16211.50| 
+ []
+
+
+Overfull \hbox (3.81815pt too wide) in paragraph at lines 115--115
+[]|\OT1/ptm/m/n/8 23440.50| 
+ []
+
+
+Overfull \hbox (3.81815pt too wide) in paragraph at lines 115--115
+[]|\OT1/ptm/m/n/8 33451.00| 
+ []
+
+
+Overfull \hbox (3.81815pt too wide) in paragraph at lines 115--115
+[]|\OT1/ptm/m/n/8 89282.50| 
+ []
+
+
+Overfull \hbox (3.81815pt too wide) in paragraph at lines 115--115
+[]|\OT1/ptm/m/n/8 27696.22| 
+ []
+
+
+Overfull \hbox (3.81815pt too wide) in paragraph at lines 115--115
+[]|\OT1/ptm/m/n/8 14237.35| 
+ []
+
+
+Overfull \hbox (3.81815pt too wide) in paragraph at lines 115--115
+[]|\OT1/ptm/m/n/8 17088.50| 
+ []
+
+
+Overfull \hbox (3.81815pt too wide) in paragraph at lines 115--115
+[]|\OT1/ptm/m/n/8 24589.00| 
+ []
+
+
+Overfull \hbox (3.81815pt too wide) in paragraph at lines 115--115
+[]|\OT1/ptm/m/n/8 34863.25| 
+ []
+
+
+Overfull \hbox (3.81815pt too wide) in paragraph at lines 115--115
+[]|\OT1/ptm/m/n/8 90642.50| 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 4001) in paragraph at lines 118--125
+\OT1/ptm/m/n/10 an ex-ten-sive amount of miss-ing in-for-ma-tion,
+ []
+
+
+Underfull \hbox (badness 1448) in paragraph at lines 118--125
+\OT1/ptm/m/n/10 and re-quires care con-sid-er-a-tion to en-sure that
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--106
+Underfull \hbox (badness 1895) in paragraph at lines 118--125
+\OT1/ptm/m/n/10 im-puter (It-er-a-tiveIm-puter) from the scikit-learn
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--106
+Underfull \hbox (badness 4518) in paragraph at lines 118--125
+\OT1/ptm/m/n/10 It is im-por-tant to clar-ify that fea-tures like
+ []
+
+
+Underfull \hbox (badness 1776) in paragraph at lines 118--125
+\OT1/ptm/m/n/10 im-pu-ta-tions, as their val-ues rely on the very
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--125
+\OT1/ptm/m/n/10 these de-pen-dent at-tributes af-ter im-pu-ta-tion,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--125
 
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 107--110
- \OT1/ptm/m/it/10 6) Data Scal-ing: [][] \OT1/ptm/m/n/10 To pre-vent sat-u-ra-t
-ion for ac-ti-va-tion
+Underfull \hbox (badness 10000) in paragraph at lines 118--125
+\OT1/ptm/m/n/10 Furthermore, to en-hance the re-li-a-bil-ity of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--110
-
+Underfull \hbox (badness 2582) in paragraph at lines 118--125
+\OT1/ptm/m/n/10 com-put-ing Round-ness, which is de-rived from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--110
-
+Underfull \hbox (badness 1953) in paragraph at lines 118--125
+\OT1/ptm/m/n/10 the value of Area when Length is avail-able,
  []
 
 [2]
+Overfull \hbox (3.2074pt too wide) in paragraph at lines 140--141
+[]|\OT1/ptm/b/n/9 encoding| 
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 156--158
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--158
+
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 166--167
+\OT1/ptm/m/n/10 con-tainer to host and run Jupyter-Lab lo-cally.
+ []
+
+
+Underfull \hbox (badness 5119) in paragraph at lines 177--178
+\OT1/ptm/m/n/10 (num-ber of neu-rons, ac-ti-va-tion func-tion) for
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 177--178
+\OT1/ptm/m/n/10 such lay-ers are es-sen-tially de-ter-mined by the
+ []
+
+
+Underfull \hbox (badness 1796) in paragraph at lines 177--178
+\OT1/ptm/m/n/10 pa-ram-e-ters and class vari-able, we only re-ally
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+ \OT1/ptm/m/it/10 2) Hid-den Lay-ers: [][] \OT1/ptm/m/n/10 Ac-ti-va-tion Func-t
+ion -
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+\OT1/ptm/m/n/10 ReLU/Leaky ReLU, men-tion pros/cons and
+ []
+
+[4]
+Underfull \hbox (badness 1430) in paragraph at lines 236--237
+[]\OT1/ptm/m/n/8 S. Liu, ``Wi-Fi En-ergy De-tec-tion Testbed (12MTC),''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
+\OT1/ptm/m/n/8 2023, gitHub repos-i-tory. [On-line]. Avail-able:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
+\OT1/ptm/m/n/8 https://github.com/liustone99/Wi-Fi-Energy-Detection-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
+[]\OT1/ptm/m/n/8 K. Eves and J. Valasek, ``Adap-tive con-trol
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
+\OT1/ptm/m/n/8 for sin-gu-larly per-turbed sys-tems ex-am-ples,''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
+\OT1/ptm/m/n/8 Code Ocean, Aug. 2023. [On-line]. Avail-able:
+ []
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -479,33 +744,36 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3
-
-] (Assignment_1.aux)
+[5] (Assignment_1.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-13>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4317 strings out of 474462
- 68199 string characters out of 5742903
- 1946998 words of memory out of 5000000
- 26583 multiletter control sequences out of 15000+600000
+ 4955 strings out of 474462
+ 78346 string characters out of 5742903
+ 1960998 words of memory out of 5000000
+ 27204 multiletter control sequences out of 15000+600000
  597689 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,11n,65p,792b,259s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,11n,65p,792b,284s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmmi10.pfb><C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmmi7.pfb><C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr10.pfb><C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts/
-type1/urw/times/utmb8a.pfb><C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts/
-type1/urw/times/utmbi8a.pfb><C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts
-/type1/urw/times/utmr8a.pfb><C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts
-/type1/urw/times/utmri8a.pfb>
-Output written on Assignment_1.pdf (3 pages, 101490 bytes).
+cmex10.pfb><C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb><C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmmi5.pfb><C:/Users/natei/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/natei/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/natei/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/natei/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/natei/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/n
+atei/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/n
+atei/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/
+natei/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/
+natei/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Assignment_1.pdf (5 pages, 157335 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
+ 79 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

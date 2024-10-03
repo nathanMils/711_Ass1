@@ -10,6 +10,9 @@
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{geometry}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -25,8 +28,7 @@ u21553832@tuks.co.za}
 \maketitle
 
 \begin{abstract}
-In order to compare and contrast different training algorithms I believe it is appropriate to, you know what fuck this is stupid
-The abstract should briefly summarise the purpose and findings of the report.
+In order to compare and contrast different training algorithms I believe it is appropriate to, 
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -34,96 +36,188 @@ This probably is not necessary
 \end{IEEEkeywords}
 
 \section{Introduction}
-The introduction sets the stage for the remainder of your report. You usually have very general statements here. The introduction prepares the reader for what to expect from reading your report. In general, the introduction should either contain or be a summary of your ENTIRE report. Keep the introduction concise, try to limit it to 1 page maximum
+In this assignment, I will be evaluating and comparing various hyperparameters and specifically training algorithms to understand the trade-offs of each approach. By exploring different configurations, such as learning rates, batch sizes, and network architectures, I aim to identify the optimal conditions to yield the best performance.\\
+
+Before any training can be done, data must be prepared and so I will go over how the data has been investigated, analysed and transformed in order to ensure that data is correctly scaled, formatted and selected as to not hinder model performance.\\
+
+Hyperparameter tuning can have a great affect, as the right choices can drastically enhance model performance while the wrong ones can lead to overfitting or underfitting amongst other issues. I will leverage techniques such as K-fold cross-validation and grid search to assess and compare the impact of these hyperparameters on model performance.\\
+
+Moreover, I will investigate various gradient based training algorithms, including gradient descent variants and advanced optimization techniques like Adam and RMSprop. Each algorithm will be analyzed in terms of convergence speed and solution quality, allowing for a deep understanding of their applicability to different datasets and tasks.\\
+
+The results of these experiments will then be presented as to highlight certain significant metrics such as accuracy, validation loss, and confusion matrices. By comparing these metrics across different configurations, I aim to provide insight into the design of a robust neural network.\\
+
+Ultimately, this report will not only demonstrate the importance of careful hyperparameter selection and algorithm choice but also demonstrate my own understanding.
+
 
 \section{Background}
+\subsection{Almonds}
+\subsection{Multi-class Classification}
+\subsection{Hyperparameter Optimization with K-Fold Cross Validation and Grid Search}
+\subsection{Training Algorithms - Adam}
+\subsection{Training Algorithms - Rprop}
+\subsection{Training Algorithms - SGD}
+\subsection{Hybrid Learning}
 A very high level discussion on the problem domain and the algorithms and/or approaches that you have used. This section is typically where the “base cases” of concepts that appear throughout the remainder of your report are discussed. It is also an ideal place to refer a reader to other sources containing relevant information on the topic which is outside the scope of your assignment. Remember to discuss very generally. After reading this section the marker should be able to determine whether or not you understand the techniques that you are using. Try to limit this section to 1 page maximum. Make sure you reference the relevant sources when discussing the building blocks of your project.
 
-\section{Experimental Set-Up}
-In this section, I will attempt to outline the approaches and strategies utilized throughout this assignment and provide rationale for the various choices made regarding data preparation, hyperparameters and hybrid learning.
 
-\subsection{Software Stack}
-To aid in this assignment, I used a Docker container to host and run Jupyter notebooks. Specifically, I used the "jupyter/scipy-notebook\_ 64-ubuntu-22.04" Docker image. For the machine learning and neural network processes, I decided to use the PyTorch framework, known for its flexibility, efficiency and more importantly its simplicity. Additionally, I incorporated essential libraries such as Pandas and NumPy for data manipulation and preparation, along with scikit-learn (sklearn) for various preprocessing and modeling tasks. This software stack provided a comprehensive set of tool for addressing the task at hand.
-
+\section{Data Preparation}
+Data preparation is an important aspect of any learning process and is vital to enhancing the performance of any neural network models.
+\newline \\
 \subsection{Dataset Description}
-The "Almond Types Classification" dataset contains a total of 2803 almonds that are described via fourteen attributes (Id and Type included). The almonds were captured using 2D images each of which in one of three different positions: upright, on its side and laid on its back. The goal of this dataset is to classify each almond into one of either three types: SANORA, MAMRA and REGULAR.
+The "Almond Types Classification" dataset was collected from Kaggle and comprises a total of 2,803 almonds. Each almond is described by fourteen attributes, including its ID and Type. The dataset features 2D images of almonds captured in three different orientations: upright, on its side, and laid on its back. The primary objective of this dataset is to classify each almond into one of three categories: SANORA, MAMRA, and REGULAR.\\
 
-\subsection{Data Preparation}
-Data preparation is an important aspect of any learning process and is vital to enhancing the performance of any supervised learning process.
+The attributes included are:
+\begin{itemize}
+    \item \textbf{Id}: Unique identifier for each almond sample.
+    \item \textbf{Length}: Length of the almond in the image (pixels).
+    \item \textbf{Width}: Width of the almond (pixels).
+    \item \textbf{Thickness}: Thickness of the almond (pixels).
+    \item \textbf{Area}: Area of the almond region detected in the image (pixels).
+    \item \textbf{Perimeter}: Total length of the almond boundary (pixels).
+    \item \textbf{Roundness}: Measure of roundness calculated as \(4 \times \text{Area} / (\pi \times \text{Length}^2)\).
+    \item \textbf{Solidity}: Ratio of the area of the almond to its convex hull area, calculated as \(\text{Area} / \text{area\_hull}\).
+    \item \textbf{Compactness}: Measure of compactness defined as \(\text{Perimeter}^2 / (4 \pi \times \text{Area})\).
+    \item \textbf{Aspect Ratio}: Ratio of the length to the width of the almond, calculated as \(\text{Length} / \text{Width}\).
+    \item \textbf{Eccentricity}: Measure defined as \(\sqrt{1 - (\text{Width} / \text{Length})^2}\).
+    \item \textbf{Extent}: Ratio of the area of the almond to the area of its bounding box, calculated as \(\text{Area} / \text{area\_bbox}\).
+    \item \textbf{Convex hull (convex area, or area hull)}: The smallest convex set that contains the boundary points of the almond.
+    \item \textbf{Type}: The almond type, which can be SANORA, MAMRA, or REGULAR.\\
+\end{itemize}
+\textbf{Class Distribution}\\
+The almond types are distributed as follows:
+\begin{itemize}
+	\item \textbf{SANORA}: 943 samples (33.64\%)
+	\item \textbf{MAMRA}: 933 samples (33.39\%)
+	\item \textbf{REGULAR}: 927 samples (33.07\%)
+\end{itemize}
+This class distribution is rather fair so there should not be any issue regarding class bias at this point.
+\begin{table*}[h]
+    \centering
+    \caption{Statistical Summary of Features with Missing Values}
+    \label{tab:dataset_stats}
+    \begin{tabularx}{\textwidth}{@{}lXXXXXXXXX@{}}
+        \toprule
+        Feature & Count & Mean & Std Dev & Min & 25\% & 50\% & 75\% & Max & Missing Values \\ 
+        \midrule
+        Length (major axis)        & 2803   & 1401.00   & 809.30   & 0.00      & 700.50     & 1401.00   & 2101.50   & 2802.00 & 857 \\
+        Width (minor axis)        & 1946   & 290.61    & 62.72    & 151.34    & 245.97    & 279.88    & 330.51    & 515.35 & 942 \\
+        Thickness (depth)         & 1799   & 109.71    & 18.94    & 59.49     & 97.09     & 110.28    & 121.39    & 181.85 & 1004 \\
+        Area                       & 2803   & 26511.12  & 13782.56 & 6037.00   & 16211.50  & 23440.50  & 33451.00  & 89282.50 & 0 \\
+        Perimeter                  & 2803   & 743.86    & 230.63   & 311.56    & 571.73    & 707.49    & 878.90    & 1864.95 & 0 \\
+        Roundness                  & 1946   & 0.47      & 0.12     & 0.17      & 0.38      & 0.47      & 0.58      & 0.70 & 857 \\
+        Solidity                   & 2803   & 0.96      & 0.04     & 0.72      & 0.94      & 0.97      & 0.98      & 0.99 & 0 \\
+        Compactness                & 2803   & 1.83      & 0.79     & 1.16      & 1.36      & 1.58      & 1.97      & 9.66 & 0 \\
+        Aspect Ratio               & 1004   & 1.75      & 0.21     & 1.40      & 1.61      & 1.71      & 1.83      & 2.73 & 1799 \\
+        Eccentricity               & 1004   & 0.81      & 0.04     & 0.70      & 0.78      & 0.81      & 0.84      & 0.93 & 1799 \\
+        Extent                     & 2803   & 0.72      & 0.05     & 0.45      & 0.70      & 0.73      & 0.76      & 0.85 & 0 \\
+        Convex hull (convex area) & 2803   & 27696.22  & 14237.35 & 6355.00   & 17088.50  & 24589.00  & 34863.25  & 90642.50 & 0 \\ 
+        \bottomrule
+    \end{tabularx}
+\end{table*}
+\subsection{Data Cleaning - Missing Values}
+As you can see in Table \ref{tab:dataset_stats}, one of the main issues of this dataset are the attributes: Length, Width and Thickness, whereby each almond is missing exactly one of these attributes. Specifically 30.57\% are missing Length, 33.61\% are missing Width and 35.82\% are missing Thickness. This is clearly an extensive amount of missing information, and requires care consideration to ensure that information loss is kept to a minimal while without degrading the data.
 \newline \\
-\subsubsection{Outliers}
-Outliers can have a significant impact on the performance of the model and so it now requires attention. In order to detect outliers I used the InterQuartile Range (IQR) method. With this method the rows outside the $25^{th}$ and $75^th$ percentile are removed from the dataset. Missing values are excluded from this and are not removed. This is performed for each column excluding the target attribute "Type". After removing the outliers we are left with
+To address this I decided to utilize the iterative imputer (IterativeImputer) from the scikit-learn library. This is a multivariate imputer that estimates each feature based on all the others. It uses a strategy for imputing values by modeling each feature with missing values as a function of others in a round-robin like fashion.
 \newline \\
-\subsubsection{Missing Values}
-Now that the outliers have been removed we can focus on the main issue of this dataset regarding the attributes: Length, Width and Thickness, whereby each almond is missing exactly one of these attributes. Specifically 30.57\% are missing Length, 33.61\% are missing Width and 35.82\% are missing Thickness. This is clearly an extensive amount of missing information, to address this I decided to utilize the iterative imputer (IterativeImputer) from the scikit-learn library. This is a multivariate imputer that estimates each feature from all the others. It uses a strategy for imputing values by modeling each feature with missing values as a function of others in a round-robin like fashion.
+It is important to clarify that features like Roundness, Aspect Ratio, and Eccentricity, which depend on Length, Width, and Thickness, will be excluded from the imputation process. Including these dependent features would not provide valid imputations, as their values rely on the very attributes that are missing. Instead, I will compute these dependent attributes after imputation, ensuring accurate calculations based on the newly estimated values.
 \newline \\
-There is still the issue concerning the attributes Roundness, Aspect Ratio and Eccentricity. These features are dependent on Length, Width, and Thickness. Therefore, including these dependent attributes in the iterative imputation process would be pointless, since their values are absent when the corresponding independent features are missing. Therefore, I have decided to exclude these dependent features from the imputation process. This leaves the following attributes: Length, Width and Thickness. The correlation matrix below demonstrates that these features are interrelated, suggesting that they will be effective for iterative imputation.
+Furthermore, to enhance the reliability of computing Roundness, which is derived from both Length and Area. The issue here is that Area is dependent on the angle of the image, I introduced a temporary feature, Area\_Length. The reason being is that Area is obviously dependent on the angle of the image taken, meaning it is highly dependent on weather length is present. So computing Roundness using Area that is not consistent with length will cause Roundness to be inconsistent. However Area\_Length will retain the value of Area when Length is available, while remaining NaN when Length is absent. The IterativeImputer will then impute missing values for Area\_Length, providing a more stable basis for accurately calculating Roundness.
+
+\subsection{Bias Handling}
+Neural networks are data-driven models, meaning their performance and predictions are highly dependent on the data they are trained on. This means that if our training data contains bias, the model will likely learn this bias and propagate it in its predictions on unknown data. This is a particularly important issue, luckily this dataset appears to represent each class equally with 943 (33.64\%) SANORA almonds, 933 (33.39\%) MAMRA almonds and 927 (33.07\%) REGULAR almonds. Therefore each class is represented almost equally and so class bias should not be an issue.
+
+\subsection{Data Transformation - Encoding}
+In the dataset, the only non-numerical feature is the class attribute 'Type', which denotes the type of almond. Since neural networks require numerical input, it is essential to transform this categorical variable into a numerical format. For this purpose, I utilized label encoding, assigning a unique integer to each category. However, the integer values are treated as indices, effectively simulating one-hot encoding. 
+
+Label encoding involves converting each unique category in a nominal variable into a corresponding integer value. While this method is typically employed for ordinal data, in this case, the integer values are used as indices for the model. This allows the objective function to correctly interpret these values while maintaining the nominal nature of the data. For the 'Type' feature, which includes three unique categories: SANORA, MAMRA, and REGULAR, the encoding is illustrated in Table \ref{tab:encoding_matrix}.
+
 \begin{table}[h]
     \centering
-    \caption{Correlation Matrix}
+    \caption{Encoding}
     \small
-    \begin{tabular}{|p{1.5cm}|p{1cm}|p{1cm}|p{1.5cm}|p{1cm}|}
+    \begin{tabular}{|p{1.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{1.1cm}|}
         \hline
-        \textbf{Features} & \textbf{Length} & \textbf{Width} & \textbf{Thickness} \\
+        \textbf{Type} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{encoding} \\
         \hline
-        Length    & 1.000 & 0.837 & 0.458\\
+        SANORA    & 1 & 0 & 0 & 1\\
         \hline
-        Width     & 0.837 & 1.000 & 0.595\\
+        MAMRA     & 0 & 1 & 0 & 2\\
         \hline
-        Thickness & 0.458 & 0.595 & 1.000\\
+        REGULAR 	 & 0 & 0 & 1 & 3\\
         \hline
     \end{tabular}
-    \label{tab:correlation_matrix}
+    \label{tab:encoding_matrix}
 \end{table}
+
+\subsection{Feature Selection}
+The feature ID (the unique identifier for each almond) wont be needed for our purposes, and hence it will be removed. This leaves us with Length, Width, Thickness, Area, Perimeter, Roundness, Solidity, Compactness, Aspect Ratio, Eccentricity, Extent and Convex hull. 
+
+\subsection{Data Splitting}
+In order to train, optimize and evaluate the model I split the data into the standard 70:20:10 ratio, with 70\% of the data allocated to training the model, 20\% allocated to validation, and 10\% allocated to testing. To ensure that the classes are represented equally in each set I used stratified sampling. With this approach the proportion of samples for each class remains near the same across the training, validation, and testing sets.
 \newline \\
-Lastly, I noticed an issue specific to the "Roundness" attribute. Unlike the other dependent attributes this attribute is calculated from both the Length and Area. This is an issue as Area is clearly influenced by the angle of the almond in the 2D image from which it is extracted. Therefore, relying on the imputed Length and original Area to compute Roundness may not be sufficient. To address this, I created a temporary attribute called Area\_ Length, which equals Area when Length is present and is NaN when Length is not present. This approach aims to provide a more reliable estimate for calculating Roundness.
-\newline \\
-Once the missing values have been imputed they are then used to recalculate the Roundness, Aspect Ratio and Eccentricity.
-\newline \\
-\subsubsection{Encoding}
-Before we can utilize neural networks we need to ensure that the data is the correct format. This is especially true for the target attribute "Type". This is a nominal value, hence there is no inherit order to the category. Therefore I utilized one-hot encoding. This ensures that the data is in a numerical format and that the model cannot interpret any inherent order from the data.
-\begin{table}[h]
-\centering
-\caption{One-Hot Encoding Representation for Almond Types}
-\begin{tabular}{|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
-\hline
-\textbf{Almond Type} & \textbf{MAMRA} & \textbf{REGULAR} & \textbf{SANORA} \\
-\hline
-MAMRA   & 1 & 0 & 0 \\
-REGULAR & 0 & 1 & 0 \\
-SANORA  & 0 & 0 & 1 \\
-\hline
-\end{tabular}
-\label{tab:one_hot_representation}
-\end{table}
-\newline \\
-\subsubsection{Bias}
-Neural networks are data-driven models, meaning their performance and predictions are highly dependent on the data they are trained on. This means that if our training data contains bias, the model will likely learn this bias and propagate it in its predictions on unknown data. This is a particularly important issue, luckily this dataset appears to represent each class equally with 943 (33.64\%) SANORA almonds, 933 (33.39\%) MAMRA almonds and 927 (33.07\%) REGULAR almonds. Therefore each class is represented almost equally and so class bias should not be an issue.
-\newline \\
-\subsubsection{Data Splitting}
-In order to train, optimize and evaluate the model I split the data into the standard 70:20:10 ratio, with 70\% of the data allocated to training the model, 20\% allocated to validation, and 10\% allocated to testing. To ensure that the target attribute is represented in each set I used stratified sampling. With this approach the proportion of samples for each class remains the same across the training, validation, and testing sets.
-\newline \\
-\subsubsection{Data Scaling}
-To prevent saturation for activation functions like sigmoid or tanh I utilized Z-Score normalization to scale all input features to zero mean and unit variance which helps avoid the issue of neurons becoming saturated.\\
-The training data transformation is also applied to all three data sets to produce the most realistic test error estimates.
-\newline \\
-\subsection{NN Architecture}
+
+\subsection{Data Transformation - Data Scaling}
+To prevent saturation for activation functions like sigmoid or tanh I utilized Z-Score normalization to scale all input features to zero mean and unit variance which helps avoid the issue of neurons becoming saturated. In order to attain the most realistic test error estimate, each set is scaled according to the training set.
+
+\section{Experimental Set-Up}
+In this section, I will outline the approaches and strategies utilized throughout this assignment and provide rationale for the various choices made regarding data hyperparameters and hybrid learning.
+
+\subsection{Software Stack}
+To aid in this assignment, I used a Docker container to host and run JupyterLab locally. Specifically, I used the "jupyter/scipy-notebook\_64-ubuntu-22.04" Docker image as a base. For the machine learning and neural network processes, I decided to use the PyTorch framework, known for its flexibility, efficiency and more importantly its simplicity. Additionally, I incorporated essential libraries such as Pandas and NumPy for data manipulation and preparation, along with scikit-learn (sklearn) for various preprocessing and modeling tasks. This software stack provided a comprehensive set of tool for addressing the task at hand.
+
+\subsection{NN model Architecture}
+There are four main elements that comprise a models architecture architecture:
+\begin{itemize}
+\item \textbf{The number of layers}: the more layers the more complex.
+\item \textbf{The number of neurons} (in each layer)
+\item \textbf{The activation function} (of each layer)
+\item \textbf{The training algorithm} (discussed later)
+\end{itemize}
+
+Since we already know that we will have an input layer and an output layer and the configuration (number of neurons, activation function) for such layers are essentially determined by the parameters and class variable, we only really need to investigate the hidden layers. There are many possible configurations that exist however I decided that this problem only required a simpler architecture. \\
+\subsubsection{Input Layer and Output Layer}
+As mentioned, the input and output layers require the least amount of discussion. Since we have twelve features, we will utilize twelve neurons in the input layer—one for each feature. These input neurons will accept the prepared feature values from our dataset and pass them to the subsequent layers. Since I am using Cross Entropy Loss we need an output neuron for each possible category. Since we have three categories (SANORA,MAMRA and REGULAR) we use three output neurons, each of which represent one category. Therefore the model will output three values, which will be passed through the Softmax activation function:
+ 
+\[
+\text{Softmax}(z_i) = \frac{e^{z_i}}{\sum_{j=1}^{N} e^{z_j}}
+\]
+
+This will convert them into probabilities which represent the likelihood of the input belonging to each class. However our implementation of Cross Entropy Loss (from PyTorch) actually does this internally so the output layer will technically not have an activation function.\\
+
+\textbf{Note:} The softmax calculation is still included in the weight update calculation.\\
+
+\subsubsection{Hidden Layers}
+Activation Function - ReLU/Leaky ReLU, mention pros/cons and mention why fewer layers may be better here
 
 \subsection{Weight Initialization}
+\begin{itemize}
+\item For ReLU - Kaiming Normal
+\item For Leaky ReLU - Kaiming Normal
+\item For PReLU - Kaiming Normal
+\item For Sigmoid - Xavier Normal
+\item For Swish - Xavier Normal
+\end{itemize}
 
-\subsection{Objective Function}
-Cross Entropy Loss
+\subsection{Loss Function - Cross Entropy Loss}
+
+\[
+L(y, \hat{y}) = -\frac{1}{N} \sum_{i=1}^{N} \sum_{j=1}^{C} y_{ij} \log(\hat{y}_{ij})
+\]
+
 \subsection{Learning Rate, Epochs and Batch Size}
-Emperically evaluated
+Emperically evaluated through grid search, mention k-fold cross validation. Add heat map for loss and accuracy
 \subsection{Training Algorithms - Adam}
-
+Implemented
 \subsection{Training Algorithms - RProp}
-
+Implemented
 \subsection{Training Algorithms - SGD}
-
+Implemented
 \subsection{Hybrid Training Algorithm}
-
+Implemented
 \section{Research Results}
+\subsection{Metrics}
+\subsection{Results}
+\subsection{Discussion}
 This is the section where you report your results obtained from running the experiments as discussed in the experimental set-up section. You have to give, at the very least, the averages and the standard deviations for all the experiments simulations. Graphing your results is advisable, and no conclusions regarding the superiority of one approach over another can be made without some form of statistical reasoning. Training and testing errors have to be reported. Thoroughly discuss the results that you have obtained, and reason about why you obtained the results that you have. Answer questions like “are these results to be expected?” and “why these results occurred?” and “would different circumstances lead to different results?”
 
 \section{Conclusions}

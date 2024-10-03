@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   jupyter:
+    privileged: true
     build: stupytar
     container_name: jupyter_notebook
     ports:
