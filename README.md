@@ -13,3 +13,18 @@ cd 711_Ass1
 
 docker compose up
 ```
+
+
+## Project Structure
+
+```
+711_Ass1/
+├── data/
+│   ├── Almond.csv
+├── notebooks/
+│   ├── Ass2.ipynb
+├── stupytar
+│   ├── Dockerfile
+├── compose.yml
+├── README.md
+```
