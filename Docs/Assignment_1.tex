@@ -13,6 +13,7 @@
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{geometry}
+\usepackage{hyperref}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -23,6 +24,8 @@
 \author{\IEEEauthorblockN{Nathan Opperman}
 \IEEEauthorblockA{ \\
 u21553832@tuks.co.za}
+\IEEEauthorblockA{ \\
+github\: \url{https://github.com/nathanMils/711_Ass1}}
 }
 
 \maketitle
@@ -198,15 +201,39 @@ Activation Function - ReLU/Leaky ReLU, mention pros/cons and mention why fewer l
 \item For Swish - Xavier Normal
 \end{itemize}
 
-\subsection{Loss Function - Cross Entropy Loss}
+\subsection{Loss Function - Multi-class Cross Entropy Loss}
+For this assignment, I believe the most suitable choice for my loss function is Multi-class Cross Entropy Loss with Softmax. Cross Entropy Loss is a popular and widely used loss function for multi-class classification. In this case, with the softmax function, it coincides with the multinomial logistic loss applied to the outputs of a neural network \cite{pmlr-v202-mao23b}. Cross Entropy Loss and Softmax are defined as follows:
+
+\subsubsection*{Softmax Function}
+The softmax function transforms the outputs of the output layer (logits) into probabilities. It is defined as:
 
 \[
-L(y, \hat{y}) = -\frac{1}{N} \sum_{i=1}^{N} \sum_{j=1}^{C} y_{ij} \log(\hat{y}_{ij})
+y_c = \text{softmax}(z_c) = \frac{e^{z_c}}{\sum_{k=1}^{C} e^{z_k}} \quad \text{for } c = 1, 2, \ldots, C
 \]
 
+\subsubsection*{Multi-class Cross Entropy Loss}
+\[
+E = -\frac{1}{N} \sum_{n=1}^{N} \sum_{c=1}^{C} \left[ t_{cn} \ln y_{cn} \right]
+\]
+
+\begin{itemize}
+    \item $N$: Number of samples in the dataset.
+    \item $C$: Number of classes ($3$).
+    \item $t_{cn}$: True label for class $c$ of the $n^{th}$ example, represented as a one-hot encoded vector.
+    \item $y_{cn}$: Predicted probability of class $c$ for the $ n^{th}$ example (computed by the softmax function).
+    \item $k$: Index for the output neuron representing each class. ($k = 0,1,2$)\\
+\end{itemize}
+Cross-entropy loss quantifies the difference between the actual distribution and the models predicted distribution. Therefore, lower values indicate better model performance.
+
+\section{Hyperparameter Tuning}
 \subsection{Learning Rate, Epochs and Batch Size}
 Emperically evaluated through grid search, mention k-fold cross validation. Add heat map for loss and accuracy
+
+
+\section{Training Algorithms}
+Discuss
 \subsection{Training Algorithms - Adam}
+Adam (Adaptive Moment Estimation) is a modern training
 Implemented
 \subsection{Training Algorithms - RProp}
 Implemented
@@ -214,6 +241,7 @@ Implemented
 Implemented
 \subsection{Hybrid Training Algorithm}
 Implemented
+
 \section{Research Results}
 \subsection{Metrics}
 \subsection{Results}
@@ -223,19 +251,7 @@ This is the section where you report your results obtained from running the expe
 \section{Conclusions}
 Very general conclusions about the assignment that you have done. This section “answers” the questions and issues that you have raised and investigated. This section is, in general, a summary of what you have done, what the results were, and finally what you concluded from these results. This is the final section in your document, so be sure that all the issues raised up until now are answered here. This is also the perfect section to discuss what you have learnt in doing this assignment.
 
-
-\begin{thebibliography}{00}
-\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
-\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
-\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
-\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
-\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
-\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
-\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
-\bibitem{b8} D. P. Kingma and M. Welling, ``Auto-encoding variational Bayes,'' 2013, arXiv:1312.6114. [Online]. Available: https://arxiv.org/abs/1312.6114
-\bibitem{b9} S. Liu, ``Wi-Fi Energy Detection Testbed (12MTC),'' 2023, gitHub repository. [Online]. Available: https://github.com/liustone99/Wi-Fi-Energy-Detection-Testbed-12MTC
-\bibitem{b10} ``Treatment episode data set: discharges (TEDS-D): concatenated, 2006 to 2009.'' U.S. Department of Health and Human Services, Substance Abuse and Mental Health Services Administration, Office of Applied Studies, August, 2013, DOI:10.3886/ICPSR30122.v2
-\bibitem{b11} K. Eves and J. Valasek, ``Adaptive control for singularly perturbed systems examples,'' Code Ocean, Aug. 2023. [Online]. Available: https://codeocean.com/capsule/4989235/tree
-\end{thebibliography}
+\bibliographystyle{plain}  % Choose a bibliography style (plain, alpha, abbrv, etc.)
+\bibliography{references}
 
 \end{document}
