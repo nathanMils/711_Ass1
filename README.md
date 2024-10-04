@@ -22,9 +22,15 @@ docker compose up
 ├── data/
 │   ├── Almond.csv
 ├── notebooks/
+│   ├── images/
 │   ├── Ass2.ipynb
-├── stupytar
+├── stupytar/
 │   ├── Dockerfile
+├── GridSearchImages/
+│   ├── GridSearch_ADAM.png
+│   ├── GridSearch_SGD.png
+│   ├── GridSearch_RPROP.png
+│   ├── GridSearch_HYBRID.png
 ├── compose.yml
 ├── README.md
 ```
